@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.dynamic-form {
+  width: 60%;
+}
+
+.dynamic-form .MuiInputBase-root::before,
+.dynamic-form .MuiInput-root::before,
+.dynamic-form .MuiInputBase-root:hover,
+.dynamic-form .MuiInput-root:hover {
+  border: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .dynamic-form {
+    width: 100%;
+  }
+}
